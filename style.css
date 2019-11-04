@@ -1,0 +1,1968 @@
+@keyframes stab {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(30deg);
+    }
+}
+
+@keyframes spurt {
+    0% {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+
+    100% {
+        transform: translateX(-90.0em) translateY(-90.0em);
+    }
+}
+
+html {
+    overflow-x: hidden;
+    font-size: 10px;
+}
+
+html, body {
+    background-color: #080707;
+}
+
+body {
+    padding: 0;
+    margin: 4em auto;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.linksection {
+    font-size: 12px;
+    text-align: center;
+    position: static;
+    padding: 0 0 36px;
+    font-family: 'Century Gothic', Arial, sans-serif;
+    color: #423730;
+}
+
+.linksection .separator {
+    padding: 0 5px;
+}
+
+.linksection a {
+    color: #584937;
+}
+
+.frame {
+    margin: auto;
+    width: 80.0em;
+    height: 79.3em;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, #211c17, #080707);
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.inner-frame {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+body .inner-frame * {
+    box-sizing: border-box;
+    position: absolute;
+}
+
+div:after, div:before {
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+.character {
+    width: 50.0em;
+    height: 90.0em;
+    margin: auto;
+    right: 0;
+    left: -7%;
+    top: -16%;
+    position: absolute;
+    transform: scale(0.5);
+    /* overflow: hidden; */
+}
+
+.character * {
+    position: absolute;
+}
+
+.head {
+    background-color: #f3d5bb;
+    background-image: radial-gradient(circle at 56% 9%, #da1f2821 8%, transparent 29%), radial-gradient(circle at 52% 16%, #f7f2e2 5%, transparent 27%), radial-gradient(circle at 16% 16%, #907b65b8 15%, transparent 26%), linear-gradient(98deg, rgba(125, 91, 61, 0.76) 14%, transparent 31%) ,radial-gradient(ellipse closest-corner at 35% 50%, #dac5a6, #c39f7d);
+    overflow: hidden;
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    position: absolute;
+    border-radius: 29% 54% 70% 30% / 43% 45% 50% 56%;
+    box-shadow: -0.3em -2.7em 1.1em -2em #b59e83, 3.5em -5.1em 1.5em -4.4em #b79c7d, inset -0.5em -1.1em 1.8em -1.1em #7b6246, inset -0.4em 1.6em 0.9em -0.8em #b59c7f, inset -0.7em -0.9em 1.9em -1em #af8376, inset 2.2em -3em 2.4em -1em #291010, inset -4em -2.7em 8em 0.3em #947968, inset -6em -0.2em 8em 3em #cdccaf, 1.3em 2.7em 0.8em -2em #2d040442, -14px -1px 8px -11px #150d0da8;
+    text-shadow: 0 0 black;
+}
+
+.noseshadow {
+    height: 16%;
+    bottom: 13%;
+    left: 15%;
+    box-shadow: 0 0 3.0em 2.2em #613e34, -2.5em 0 3.5em 1.0em #2f1407cf;
+}
+
+.nose {
+    width: 29%;
+    height: 31%;
+    top: 38%;
+    left: 12%;
+}
+
+.nose:after {
+    bottom: 29%;
+    right: 41%;
+    box-shadow: -2em 1.9em 1em 0.9em #f9eeee, 0 0 5.8em 3.6em rgba(197, 104, 84, 0.87);
+}
+
+.nose .tip {
+    border-radius: 34% 54% 30% 46% / 62% 52% 45% 37%;
+    background-color: #deb4a5;
+    background-image: radial-gradient(ellipse at 44% 7%, #fdf6f6 9%, transparent 29%), linear-gradient(105deg, #461a1a 9%, transparent 21%), radial-gradient(ellipse at 71% 37%, #f7f0e2, transparent 55%), radial-gradient(ellipse farthest-corner at 130% 33%, transparent 49%, #9e7b5a 133%), radial-gradient(ellipse at 62% 33%, #ecddc2, transparent);
+    width: 80%;
+    height: 37%;
+    bottom: 0;
+    left: 5%;
+    overflow: hidden;
+    box-shadow: inset 1.6em -2.3em 1em -1.8em #5f3b31, inset 2.6em -0.1em 1.5em -1.8em #8e7357, -1.7em 2.9em 1.1em -2.1em #2b1915, 0.3em 1.6em 0.6em -1.1em #29120d91, -1.6em 1.8em 2.3em -1.1em #29120d9c, 2.2em 0.2em 2em -2em #c7998f, inset -0.7em -1.7em 1.6em -0.6em #b39a8b, 1.3em 0.8em 0.8em -1em #b39a8b, 3.4em 3.4em 1.4em -1.7em #fdeeddcf, 1.3em -3em 0.951em -2em #e8d5d0;
+    transform: rotate(1deg);
+}
+
+.nose .edge {
+    height: 58%;
+    left: 71%;
+    top: 8%;
+    transform: rotate(18deg);
+    box-shadow: 0 0 2em 0.2em #b78a68, -2em 0 1.4em 0.58em #fffaef;
+}
+
+.nose .edge:before {
+    height: 70%;
+    top: 55%;
+    box-shadow: -2em 0 1em 1.5em #f7e4d0;
+}
+
+.nose .edge:after {
+    height: 58%;
+    top: 18%;
+    transform: rotate(-5deg);
+    box-shadow: -0.6em 0 1.2em 0.2em #967861c4, -1.7em 0 0.86em 0.3em #fffefc;
+}
+
+.nose .tipshadow {
+    box-shadow: 0 0 2.0em 1.1em #7337318f;
+    bottom: 3%;
+    left: 19%;
+    width: 47%;
+    transform: rotate(9deg);
+}
+
+.nostril.left {
+    transform: rotate(-55deg);
+    box-shadow: 0 0 0.4em 0.3em #130101, -0.7em 0.4em 0.5em 1.4em #48291d, 1.5em 0.6em 0.7em 0.6em #b7a082;
+    bottom: -4%;
+    height: 26%;
+    left: 20%;
+}
+
+.nostril.right {
+    transform: rotate(2deg);
+    box-shadow: 0 0 0.4em 0.3em #0a0101, -0.8em 0.1em 0.7em 0.7em #48291d;
+    bottom: 6%;
+    width: 26%;
+    height: 6%;
+    left: 53%;
+    border-radius: 50%;
+    background: #0a0101;
+}
+
+.outer-bridge {
+    overflow: hidden;
+    transform: rotate(13deg);
+    background-image: radial-gradient(ellipse at 100% 0, rgba(88, 20, 17, 0.12) 28%, transparent 56%);
+    border-radius: 45% 53% 2% 17% / 6% 26% 49% 15%;
+    box-shadow: 0.1em -2.3em 1.7em -1.4em #674037, 1.2em -0.6em 1.0em -0.4em #8e7267;
+    width: 25%;
+    height: 35%;
+    top: 33%;
+    left: -5%;
+}
+
+.inner-bridge {
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    box-shadow: inset -0.3em 3.3em 2.0em -1.4em #48292291;
+}
+
+.inner-bridge:after {
+    height: 90%;
+    right: 0;
+    box-shadow: 0 0 1.0em 1.1em #613e39;
+    transform: rotate(4deg);
+}
+
+.mouth {
+    bottom: 17%;
+    width: 30%;
+    height: 9%;
+    left: 13%;
+    transform: rotate(3deg);
+}
+
+.toplips {
+    border-radius: 0 0 49% 50% / 55% 0 27% 35%;
+    width: 100%;
+    left: 0;
+    height: 49%;
+    overflow: hidden;
+    box-shadow: -0.2em 1.3em 0.3em -1.2em #230404, -1.3em 0.9em 0.8em -1.2em #190000, 0.5em 0.8em 1.1em -0.7em #2d0808, 1.4em 1.1em 0.3em -1.3em #270303;
+}
+
+.toplips:after {
+    width: 109%;
+    height: 100%;
+    border-radius: inherit;
+    box-shadow: inset -0.9em -1.1em 1.0em -0.9em #4a0b0b;
+}
+
+.topleftlip {
+    background-color: #d08178;
+    background-image: linear-gradient(31deg, #1f0303 39%, #752727, transparent 96%);
+    box-shadow: inset 1.4em 0.2em 0.6em -0.6em #502323, inset -0.5em 0.3em 0.3em -0.3em #ad8162;
+    height: 106%;
+    left: 0%;
+    width: 37%;
+    bottom: -26%;
+    border-radius: 45% 50% 9% 51% / 94% 70% 30% 12%;
+    transform: rotate(-20deg);
+}
+
+.toprightlip {
+    background-color: #ce9590;
+    background-image: linear-gradient(1deg, #632922, #773630, transparent 80%);
+    box-shadow: inset 0.0em 0.8em 0.4em -0.5em #dcbcab;
+    height: 118%;
+    bottom: 0;
+    right: 9%;
+    width: 58%;
+    border-radius: 30% 70% 9% 9% / 67% 70% 30% 9%;
+    transform: rotate(11deg);
+    transform-origin: 0 100%;
+}
+
+.bottomlips {
+    border-radius: 35% 0 62% 38% / 41% 0 99% 58%;
+    width: 94%;
+    right: 0;
+    bottom: 0;
+    height: 89%;
+}
+
+.bottomlips:before {
+    left: 36%;
+    top: 40%;
+    box-shadow: 0 0 0.6em 0.4em black;
+    width: 16%;
+}
+
+.bottomleftlip {
+    width: 91%;
+    bottom: 0;
+    height: 65%;
+    background-color: #efb8b8;
+    border-radius: 0% 0 62% 34% / 0% 0 99% 93%;
+    box-shadow: 1.4em 0.9em 0.7em -1.2em #d0a7a2, -0.4em 0.1em 0.3em 0.0em #581f1f, -1.0em 2.1em 1.1em -1.0em #502020bd, -2.2em 1.4em 1.8em 0.4em #38201396;
+    background-image: radial-gradient(ellipse at 48% 45%, #dc7e7e, transparent 48%), linear-gradient(99deg, #460808, transparent);
+}
+
+.bottomrightlip {
+    transform: rotate(-3deg);
+    bottom: 43%;
+    width: 29%;
+    right: 32%;
+    box-shadow: 0 0 0.4em 0.1em white;
+}
+
+.chin {
+    bottom: 3%;
+    left: 18%;
+    border-radius: 50%;
+    width: 27%;
+    height: 11%;
+    filter: blur(0.4em);
+    background-image: radial-gradient(ellipse at 92% 68%, transparent 50%, #f3eede36, transparent 81%), radial-gradient(ellipse at 60% 68%, #d810501f, transparent 61%), radial-gradient(ellipse at 43% 23%, #f3e1bb, transparent 40%);
+}
+
+.mouthcorner {
+    right: -1%;
+    top: 38%;
+    height: 8%;
+    width: 11%;
+    background: #542e2e;
+    border-radius: 50%;
+    transform: rotate(-12deg);
+    box-shadow: -0.3em 1.1em 0.76em 0.4em #efd9cdd1, 0.8em 0.1em 0.8em 0.2em #986362, 0.2em -0.6em 1.6em 0.2em #61312f;
+}
+
+.mouthcornerleft {
+    left: 4%;
+    top: 28%;
+    height: 31%;
+    transform: rotate(-60deg);
+    box-shadow: 0.2em -0.6em 1.6em 0.9em #381a15, -0.4em 0.4em 1.1em 0.5em #f7d4c5;
+}
+
+.eyeleft {
+    width: 97%;
+    height: 46%;
+    left: 1%;
+    top: 5%;
+    background-image: radial-gradient(ellipse closest-side at 50% 50%, #3c1d111f 67%, transparent);
+    border-radius: 50% 50% 30% 70% / 50% 50% 50% 50%;
+}
+
+.eyeright {
+    width: 54%;
+    height: 26%;
+    left: 29%;
+    top: 30.3%;
+    background-image: radial-gradient(ellipse closest-side at 50% 49%, #a98e77 53%, transparent 83%), radial-gradient(ellipse closest-side at 50% 50%, #ad8e79 10%, transparent 100%);
+}
+
+.cheek {
+    bottom: 26%;
+    right: 11%;
+    border-radius: 50% 50% 60% 39% / 9% 39% 59% 93%;
+    width: 57%;
+    height: 40%;
+    filter: blur(0.5em);
+    background-image: radial-gradient(ellipse at 40% 65%, rgba(220, 0, 51, 0.08) 8%, transparent 46%), radial-gradient(ellipse at 24% 50%, rgba(255, 252, 247, 0.6), transparent 20%), radial-gradient(ellipse at 64% 56%, rgba(255, 255, 255, 0.42), transparent 28%);
+    box-shadow: inset -2.2em -8.3em 4.0em -5.9em rgba(128, 98, 98, 0.5), 2.6em 4.9em 4.0em -2.5em rgba(128, 98, 98, 0.5);
+}
+
+.eyeright .toplid {
+    background-image: linear-gradient(95deg, #92725a, #9c736c 43%, #ceaba5, #9c7f72 76%, #9f8167);
+    border-radius: 52% 50% 50% 50% / 90% 90% 10% 10%;
+    width: 45%;
+    height: 26%;
+    bottom: 41%;
+    left: 23%;
+    box-shadow: 0.3em -1.0em 0.3em -0.8em #5d3425, 0.8em -1.1em 2.0em -0.1em #4e231c, inset 0 1.5em 0.4em -1.2em #906a62, -0.9em -1.6em 2.0em -0.5em #ca9f7a, -2.3em -0.9em 2.0em 0.2em #846559;
+}
+
+.eye:after {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.eyeright .bottomlid {
+    border-radius: 40% 60% 50% 50% / 10% 10% 90% 90%;
+    width: 46%;
+    height: 33%;
+    bottom: 15%;
+    left: 23%;
+    background-image: radial-gradient(ellipse at 53% 44%, #a98578 35%, transparent 54%), radial-gradient(ellipse at 53% 11%, #744e40 34%, #94765e, transparent 66%);
+}
+
+.eyeright .eye {
+    overflow: hidden;
+    border-radius: 99% 0;
+    background-image: radial-gradient(circle at 11% 8%, #f9f0e2 23%, #71655d 78%);
+    height: 43%;
+    width: 23%;
+    left: 34%;
+    bottom: 23%;
+    transform: rotate(55deg);
+    box-shadow: -0.1em -0.6em 0.3em -0.2em #170808c4, 1.6em -1.0em 0.1em -1.6em white, inset -0.1em 0.1em 0.2em 0.2em #58282838, 0.5em 0.1em 0.2em 0.1em #c39898bd, -0.1em -0.2em 0.2em 0.0em #8c635f;
+}
+
+.eyeright .eye:after {
+    box-shadow: inset 0.9em 0.9em 0.4em -0.8em #150c0bc2;
+}
+
+.eyeright .iris {
+    top: 6%;
+    right: 11%;
+    width: 75%;
+    height: 58%;
+    background-color: #8e6c4c;
+    background-image: linear-gradient(131deg, rgba(14, 7, 4, 0.89) 31%, transparent 61%), radial-gradient(transparent 33%, #271a06 84%), repeating-conic-gradient(transparent, rgba(53, 37, 37, 0.52) 20deg, transparent 30deg);
+    box-shadow: 0 0 0.3em 0.2em #3e2909;
+    border-radius: 50%;
+}
+
+.eyeright .pupil {
+    margin: auto;
+    background: #1f1313;
+    box-shadow: 0 0 0.2em 0.1em #1f1213;
+    width: 40%;
+    height: 40%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+}
+
+.eyeright .pupil:after {
+    background: white;
+    width: 25%;
+    height: 25%;
+    border-radius: inherit;
+    right: 14%;
+    top: -25%;
+}
+
+.eyeright .tearduct {
+    border-radius: 83% 17%;
+    width: 8%;
+    height: 21%;
+    left: 29%;
+    bottom: 35%;
+    box-shadow: inset 0.6em -0.6em 0.2em -0.5em #ab8189, 0.1em 1.2em 0.2em -0.4em #bf8f98;
+    transform: rotate(56deg);
+    background-image: linear-gradient(24deg, #a76974 8%, #6d4343 28%, transparent 51%);
+}
+
+.eyeright .innercorner {
+    border-radius: 50%;
+    width: 10%;
+    height: 30%;
+    left: 24%;
+    bottom: 22%;
+    box-shadow: -1.5em 0.3em 0.6em -0.4em #fdf0ef7a;
+    transform: rotate(-6deg);
+    filter: blur(0.2em);
+}
+
+.leftbrow {
+    border-radius: 55% 45% 0 0 / 90% 80% 0 0;
+    border-top: 1.5em solid rgb(103, 75, 62);
+    width: 20%;
+    height: 5%;
+    left: 1%;
+    top: 32%;
+    filter: blur(0.5em);
+    transform: rotate(14deg);
+}
+
+.leftbrow:before {
+    border-top: 1.3em solid #4a3127cc;
+    top: -100%;
+    right: -4%;
+    width: 58%;
+    transform: rotate(-10deg);
+}
+
+.eyeright .brow {
+    border-radius: 55% 45% 0 0 / 90% 80% 0 0;
+    border-top: 1.8em solid rgba(60, 21, 8, 0.3);
+    border-left: 2.0em solid rgba(53, 14, 6, 0.31);
+    width: 70%;
+    height: 19%;
+    left: 13%;
+    top: 7%;
+    filter: blur(0.5em);
+    transform: rotate(0deg);
+}
+
+.leftbrow:before, .leftbrow:after, .brow:before, .brow:after {
+    height: 100%;
+    border-radius: inherit;
+}
+
+.brow:before {
+    border-top: 1.3em solid #63392aa3;
+    top: -100%;
+    left: -4%;
+    width: 70%;
+    transform: rotate(-10deg);
+}
+
+.eyeright .lash {
+    filter: blur(0.15em);
+    border-radius: 50%;
+    border-right: 0.3em solid rgba(43, 27, 17, 0.3);
+    height: 9%;
+    width: 5%;
+    transform-origin: 50% 100%;
+}
+
+.eyeright .lash.l1 {
+    right: 36%;
+    bottom: 47%;
+    height: 14%;
+    transform: rotate(83deg);
+}
+
+.eyeright .lash.l2 {
+    right: 35%;
+    bottom: 50%;
+    transform: rotate(79deg);
+}
+
+.eyeright .lash.l3 {
+    right: 37%;
+    bottom: 52%;
+    transform: rotate(82deg);
+}
+
+.eyeright .lash.l4 {
+    right: 40%;
+    bottom: 54%;
+    transform: rotate(81deg);
+}
+
+.eyeright .lash.l5 {
+    border: 0;
+    right: 37%;
+    border-radius: 67%;
+    transform: rotate(9deg);
+    bottom: 49%;
+    height: 11%;
+    width: 25%;
+}
+
+.eyeleft .toplid {
+    background-image: linear-gradient(95deg, #5d3428, #8a6e55 43%, #a0746c, #866a4f 76%, #6f5136);
+    border-radius: 44% 48% 50% 50% / 90% 90% 10% 10%;
+    width: 75%;
+    height: 39%;
+    bottom: 47%;
+    left: 21%;
+    transform: rotate(-14deg);
+    box-shadow: -0.2em -2.0em 1.2em 0.3em #48272194, 0.5em -1.1em 0.4em -0.7em rgba(84, 46, 42, 0.35), 0.5em -0.6em 0.7em 0.1em #3a1717, inset -0.7em 1.6em 0.5em -1.3em #4c2017, -3.3em 0.0em 1.2em 0.3em #4e302ad4;
+}
+
+.eyeleft .bottomlid {
+    border-radius: 40% 60% 50% 50% / 10% 10% 90% 90%;
+    width: 84%;
+    height: 50%;
+    bottom: 9%;
+    left: 18%;
+    box-shadow: -0.4em 1.7em 1.2em -0.9em #6b4936c4, -0.2em 4.5em 1.4em -0.5em #f2e0d333;
+    background-image: radial-gradient(ellipse closest-side at 60% 46%, #a9877a 10%, transparent 102%), radial-gradient(ellipse at 50% 13%, #5a462e 33%, #61312263, transparent 72%), linear-gradient(to right, #5a4035, transparent);
+}
+
+.eyeleft .lash {
+    filter: blur(0.1em);
+    border-radius: 50%;
+    border-left: 0.3em solid rgba(35, 19, 10, 0.45);
+    height: 9%;
+    width: 5%;
+    transform-origin: 50% 100%;
+}
+
+.eyeleft .lash.l1 {
+    left: 36%;
+    bottom: 44%;
+    height: 17%;
+    transform: rotate(-99deg);
+}
+
+.eyeleft .lash.l2 {
+    left: 30%;
+    bottom: 49%;
+    height: 14%;
+    transform: rotate(-97deg);
+}
+
+.eyeleft .lash.l3 {
+    left: 35%;
+    bottom: 53%;
+    height: 14%;
+    transform: rotate(-93deg);
+}
+
+.eyeleft .lash.l4 {
+    left: 38%;
+    bottom: 59%;
+    height: 14%;
+    transform: rotate(-93deg);
+}
+
+.eyeleft .eye {
+    overflow: hidden;
+    border-radius: 88% 16%;
+    background-image: radial-gradient(circle at 46% 28%, #f9f0e2 23%, #4a372b 78%);
+    height: 50%;
+    width: 48%;
+    left: 40%;
+    bottom: 26%;
+    transform: rotate(30deg);
+    box-shadow: -0.6em -0.1em 0.3em -0.2em #170808b5, 1.5em 0.4em 0.1em -1.6em #b99494, inset -0.1em 0.1em 0.2em 0.2em #582828bf, 0.5em 0.2em 0.1em 0.0em #b55d5d6b, -0.1em -0.2em 0.2em 0.0em #8c635f;
+}
+
+.eyeleft .eye:after {
+    box-shadow: inset 0.9em 0.9em 0.4em -0.8em #150c0bb5;
+}
+
+.eyeleft .iris {
+    top: -1%;
+    right: 11%;
+    width: 73%;
+    height: 72%;
+    background-color: #8e6c4c;
+    background-image: linear-gradient(131deg, rgba(14, 7, 4, 0.84) 31%, transparent 61%), radial-gradient(transparent 33%, #271a06 84%), repeating-conic-gradient(transparent, rgba(53, 37, 37, 0.52) 20deg, transparent 30deg);
+    box-shadow: 0 0 0.3em 0.2em #3e2909;
+    border-radius: 50%;
+}
+
+.eyeleft .pupil {
+    margin: auto;
+    background: #1f1313;
+    box-shadow: 0 0 0.2em 0.1em #1f1213;
+    width: 40%;
+    height: 40%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+}
+
+.eyeleft .pupil:after {
+    background: white;
+    width: 25%;
+    height: 25%;
+    border-radius: inherit;
+    right: 14%;
+    top: -25%;
+}
+
+.eyeleft .tearduct {
+    border-radius: 90% 10%;
+    width: 22%;
+    height: 28%;
+    right: 2%;
+    bottom: 40%;
+    box-shadow: 0.2em -0.8em 0.2em -0.4em #9e6c7699, inset -0.7em 0.6em 0.4em -0.1em #542222;
+    transform: rotate(42deg);
+    background-image: linear-gradient(-126deg, #351616, #6d3939ba 41%, transparent 63%);
+}
+
+.eyeleft .innercorner {
+    border-radius: 50%;
+    width: 10%;
+    height: 23%;
+    left: 22%;
+    bottom: 30%;
+    box-shadow: -1.5em 0.3em 0.6em -0.4em #ffffffa6;
+    transform: rotate(-6deg);
+    filter: blur(0.2em);
+}
+
+.philtrum {
+    left: 21%;
+    bottom: 24%;
+    width: 7%;
+    transform: rotate(12deg);
+    height: 7%;
+    border-radius: 50% 50% 50% 50% / 70% 60% 40% 30%;
+    background-image: linear-gradient(to right, #c1a17f, #c3a38c, rgb(167, 130, 120), #e0d3bb);
+    filter: blur(0.2em);
+    box-shadow: -1.7em 0.1em 0.7em 0.9em #ffdab924, 0.1em 0.9em 0.5em -0.2em #a26059;
+}
+
+.hairshape {
+    width: 119%;
+    height: 65%;
+    border-radius: 45% 55% 50% 50% / 44% 40% 60% 56%;
+    left: 0%;
+    top: -11%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.hairshape * {
+    pointer-events: all;
+}
+
+.hairshape.back {
+    background-color: #382720;
+    background-image: linear-gradient(131deg, #29180e 17%, #a52a2a00 23%), radial-gradient(circle at 40% 44%, transparent 41%, #f5af4142 48%, transparent 56%);
+    box-shadow: inset -0.9em 0.9em 5.0em 0.9em #130c0a;
+    background-blend-mode: normal, screen;
+    overflow: visible;
+}
+
+.hairshape.front {
+    filter: blur(0.1em);
+}
+
+.hairshape.front:after {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    box-shadow: inset -7.8em 6.3em 4.8em -4.7em #1b130cbf;
+    background-image: radial-gradient(circle at 26% 74%, transparent 59%, #deb87e14, #27100169 79%);
+}
+
+.hair {
+    border-radius: 0 78% 3% 2% / 0 84% 14% 0%;
+}
+
+.hair .strand {
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    border-color: inherit;
+    box-shadow: 1.2em 0 0.7em -1.2em #29190c82;
+    transform-origin: 100% 100%;
+}
+
+.hair .strand:nth-child(3n) {
+    top: -2%;
+    transform: rotate(-2deg);
+}
+
+.hair .strand:nth-child(4n) {
+    height: 106%;
+}
+
+.hair .strand:nth-child(5n) {
+    opacity: 0.5;
+}
+
+.strand.s1 {
+    right: 100%;
+}
+
+.strand.s2 {
+    right: 95%;
+}
+
+.strand.s3 {
+    right: 90%;
+}
+
+.strand.s4 {
+    right: 85%;
+}
+
+.strand.s5 {
+    right: 80%;
+}
+
+.strand.s6 {
+    right: 75%;
+}
+
+.strand.s7 {
+    right: 70%;
+}
+
+.strand.s8 {
+    right: 65%;
+}
+
+.strand.s9 {
+    right: 60%;
+}
+
+.strand.s10 {
+    right: 55%;
+}
+
+.strand.s11 {
+    right: 50%;
+}
+
+.strand.s12 {
+    right: 45%;
+}
+
+.strand.s13 {
+    right: 40%;
+}
+
+.strand.s14 {
+    right: 35%;
+}
+
+.strand.s15 {
+    right: 30%;
+}
+
+.strand.s16 {
+    right: 25%;
+}
+
+.strand.s17 {
+    right: 20%;
+}
+
+.strand.s18 {
+    right: 15%;
+}
+
+.strand.s19 {
+    right: 10%;
+}
+
+.strand.s20 {
+    right: 5%;
+}
+
+.strand.s21 {
+    right: 0%;
+}
+
+.hair.h1 {
+    right: 7%;
+    top: 18%;
+    height: 30%;
+    width: 22%;
+    transform: rotate(49deg);
+    border-color: #674c33;
+}
+
+.hair.h2 {
+    right: -5%;
+    top: 32%;
+    width: 24%;
+    height: 38%;
+    border-color: #584030;
+    transform: rotate(51deg);
+}
+
+.hair.h3 {
+    right: 33%;
+    top: -1%;
+    height: 26%;
+    width: 19%;
+    transform: rotate(24deg) scaleX(-1);
+    border-color: #5a3c29;
+}
+
+.hair.h4 {
+    left: 20%;
+    top: -1%;
+    height: 17%;
+    width: 19%;
+    transform: rotate(3deg) scaleX(-1);
+    border-color: #443022;
+}
+
+.hair.h5 {
+    left: -9%;
+    top: -13%;
+    height: 40%;
+    width: 23%;
+    transform: rotate(49deg) scaleX(-1) scaleY(-1);
+    border-color: #584131;
+}
+
+.hair.h6 {
+    left: -2%;
+    top: 20%;
+    height: 7%;
+    width: 17%;
+    transform: rotate(-53deg) scaleX(-1);
+    border-color: #442e21;
+}
+
+.hair.h7 {
+    left: 7%;
+    top: 9%;
+    height: 9%;
+    width: 15%;
+    transform: rotate(-22deg) scaleX(-1);
+    border-color: #463022;
+}
+
+.hair.h8 {
+    left: 34%;
+    top: -4%;
+    height: 22%;
+    width: 19%;
+    transform: rotate(15deg) scaleX(-1);
+    border-color: #67492b;
+    box-shadow: 0.9em 0.0em 0.3em -0.2em #1f10046e;
+}
+
+.hair.h9 {
+    right: -1%;
+    top: 44%;
+    height: 53%;
+    width: 27%;
+    transform: rotate(49deg);
+    border-color: #443524;
+}
+
+.hair.h10 {
+    left: 64%;
+    top: 6%;
+    height: 29%;
+    width: 14%;
+    transform: rotate(44deg);
+    border-color: #6f5133;
+    overflow: hidden;
+    box-shadow: 1.4em -0.3em 0.2em -0.2em #8a6b48;
+}
+
+.hair.h11 {
+    left: 49%;
+    top: -2%;
+    height: 26%;
+    width: 19%;
+    transform: rotate(35deg) scaleX(-1);
+    border-color: #826344;
+    overflow: hidden;
+}
+
+.hair.h12 {
+    background-image: radial-gradient(circle at 10% 82%, #583f28, transparent 16%);
+    right: -1%;
+    top: 29%;
+    height: 34%;
+    width: 28%;
+    transform: rotate(56deg);
+    border-color: #7b6043;
+}
+
+.hair.h13 {
+    right: -1%;
+    top: 22%;
+    height: 32%;
+    width: 33%;
+    transform: rotate(58deg);
+    border-color: #754f2c;
+}
+
+.hair.h14 {
+    right: 5%;
+    top: 9%;
+    height: 39%;
+    width: 21%;
+    transform: rotate(191deg) scaleX(-1);
+    border-color: #86674a;
+}
+
+.hair.h15 {
+    right: -9%;
+    top: 39%;
+    height: 48%;
+    width: 21%;
+    overflow: hidden;
+    transform: rotate(202deg) scaleX(-1);
+    border-color: #674d33;
+}
+
+.hair.h16 {
+    right: 27%;
+    top: 0%;
+    height: 28%;
+    width: 12%;
+    transform: rotate(-149deg) scaleY(-1);
+    border-color: #8a6c4e;
+    box-shadow: inset -1.1em 0.8em 0.3em -0.6em #3a2310bd;
+}
+
+.hair.h17 {
+    left: -8%;
+    top: 1%;
+    height: 12%;
+    width: 27%;
+    transform: rotate(147deg) scaleY(-1);
+    border-color: #58442e;
+}
+
+.hair.h18 {
+    right: 28%;
+    top: 41%;
+    height: 24%;
+    width: 19%;
+    transform: rotate(44deg) scaleY(-1) scaleX(-1);
+    border-color: #86684b8f;
+    background-image: radial-gradient(circle at 16% 88%, #583f28, transparent 27%);
+}
+
+.hair.h19 {
+    right: 28%;
+    top: 51%;
+    height: 33%;
+    width: 17%;
+    transform: rotate(13deg) scaleY(-1) scaleX(-1);
+    border-color: #7b5d3e75;
+    background-image: radial-gradient(circle at 16% 83%, #886d54, transparent 27%);
+}
+
+.hair.h20 {
+    left: -12%;
+    top: 3%;
+    height: 12%;
+    width: 25%;
+    transform: rotate(136deg) scaleY(-1);
+    border-color: #403121;
+}
+
+.hair.h21 {
+    right: 11%;
+    top: 49%;
+    height: 16%;
+    width: 21%;
+    transform: rotate(89deg);
+    border-color: #86684bd9;
+}
+
+.hair.h21 .strand:nth-child(4n) {
+    transform: rotate(12deg);
+}
+
+.hair.h22 {
+    right: 11%;
+    bottom: 0%;
+    height: 18%;
+    width: 22%;
+    transform: rotate(104deg) scaleX(-1);
+    border-color: #38240eab;
+}
+
+.hair.h22 .strand:nth-child(3n) {
+    transform: rotate(6deg) scaleY(0.75);
+    border-color: #351c11;
+}
+
+.strand {
+    border-right: 0.2em solid;
+}
+
+.neckruff {
+    perspective: 32.6em;
+    border-radius: 50%;
+    width: 170%;
+    height: 96%;
+    transform-style: preserve-3d;
+}
+
+.neckruff.top {
+    top: 22%;
+    transform: rotateY(18deg) rotateX(-20deg) rotateZ(4deg) scaleY(0.999) translateZ(-10.9em);
+    left: -4%;
+}
+
+.neckruff.bottom {
+    top: 31%;
+    left: -1%;
+    transform: rotateY(3deg) rotateX(48deg) rotateZ(6deg) scaleY(1.325) scaleX(1.05) translateZ(-2.3em);
+}
+
+.lacetop {
+    width: 10.2em;
+    height: 59%;
+    right: 50.15%;
+    bottom: 50%;
+    transform-origin: 50% 100%;
+    transform-style: preserve-3d;
+}
+
+.lacetop:before {
+    height: 77%;
+    width: 100%;
+    bottom: 0%;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    border-radius: 50% 50% 0 0 / 2.3em 2.3em 0 0;
+    background-image: linear-gradient(87deg, #fbfbfb 5%, #989898b5 29%, #e8e7e74f, #8e8e8e 95%);
+}
+
+.lacetop .arc {
+    border-style: solid;
+    opacity: 0.5;
+    color: white;
+}
+
+.neckruff.bottom .lacetop .arc {
+    color: #f5eadc66;
+}
+
+.neckruff.top .lacetop .arc {
+    color: white;
+}
+
+.neckruff.bottom .lacetop:before {
+    opacity: 0.6;
+}
+
+.neckruff.top .lacetop:before {
+    color: white;
+}
+
+.arc.a1, .arc.a2, .arc.a3, .arc.a4, .arc.a5, .arc.a6, .arc.a7, .arc.a8, .arc.a9 {
+    width: 3.1em;
+    height: 2.5em;
+    border-radius: 50% 50% 0 0;
+    border-style: dotted;
+    border-width: 0.4em;
+    border-bottom-width: 0;
+    background-image: linear-gradient(to bottom, transparent 45%, currentColor 45%, currentColor 55%, transparent 55%), linear-gradient(to right, transparent 30%, currentColor 30%, currentColor 40%, transparent 40%, transparent 60%, currentColor 60%, currentColor 70%, transparent 70%);
+    background-size: 70% 70%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0.3em 0.1em 0.2em currentColor;
+}
+
+.arc.a1 {
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.arc.a2 {
+    left: 56%;
+    transform-origin: 0 100%;
+    transform: rotate(53deg);
+}
+
+.arc.a3 {
+    right: 57%;
+    transform-origin: 100% 100%;
+    transform: rotate(-45deg);
+}
+
+.arc.a4, .arc.a5 {
+    top: 1.4em;
+}
+
+.arc.a4, .arc.a6 {
+    right: -0.9em;
+    transform-origin: 0% 100%;
+    transform: rotate(90deg);
+}
+
+.arc.a5, .arc.a7 {
+    left: -0.9em;
+    transform-origin: 100% 100%;
+    transform: rotate(-90deg);
+}
+
+.arc.a6, .arc.a7 {
+    top: 3.9em;
+}
+
+.arc.a8, .arc.a9 {
+    top: 6.2em;
+}
+
+.arc.a8 {
+    right: -1.1em;
+    transform-origin: 0 100%;
+    transform: rotate(130deg);
+}
+
+.arc.a9 {
+    left: -0.9em;
+    transform-origin: 100% 100%;
+    transform: rotate(-130deg);
+}
+
+.arc.a10 {
+    border-radius: 50%;
+    border: 0.3em solid;
+    width: 58%;
+    height: 6.2em;
+    margin: auto;
+    top: 2.6em;
+    left: 0;
+    right: 0;
+    background-image: repeating-conic-gradient(from 0deg at 50% 80%, currentColor, currentColor 4deg, transparent 6deg, transparent 18deg);
+}
+
+.arc.a15 {
+    top: 11.1em;
+    width: 91%;
+    left: 0;
+    right: 0;
+    padding: 0 0 0.4em;
+    margin: 0.4em auto;
+    border-top: 0.4em dotted currentColor;
+    height: 1.6em;
+    border-bottom: 0;
+    box-shadow: 0 -0.2em 0.1em 0.0em currentColor, inset 0 0.4em 0.1em 0 currentColor;
+    border-radius: 50% 50% 0 0 / 99% 99% 0 0;
+}
+
+.arc.a14, .arc.a13 {
+    border: 0.2em solid;
+    width: 14%;
+    height: 2.8em;
+    top: 7.4em;
+    border-radius: 50%;
+}
+
+.arc.a13 {
+    transform: rotate(-45deg);
+    right: 63%;
+}
+
+.arc.a14 {
+    transform: rotate(45deg);
+    left: 63%;
+}
+
+.arc.a11, .arc.a12 {
+    border-radius: 50%;
+    width: 23%;
+    height: 1.6em;
+    margin: auto;
+    left: 0;
+    right: 0;
+    border: 0.2em solid;
+}
+
+.arc.a11 {
+    top: 8.6em;
+}
+
+.arc.a12 {
+    top: 9.7em;
+    width: 30%;
+}
+
+:root {
+    --rotate-x: -9deg; --rotate-y: 4deg; --rotate-ya: -4deg; }
+
+.lacetop.lt1 {
+    transform: rotate(-98deg) rotateX(var(--rotate-x)) rotateY(var(--rotate-y));
+}
+
+.lacetop.lt2 {
+    transform: rotate(-83deg) rotateX(var(--rotate-x)) rotateY(var(--rotate-ya));
+}
+
+.lacetop.lt3 {
+    transform: rotate(-68deg) rotateX(var(--rotate-x)) rotateY(var(--rotate-y));
+}
+
+.lacetop.lt4 {
+    transform: rotateZ(-53deg) rotateX(var(--rotate-x)) rotateY(var(--rotate-ya));
+}
+
+.lacetop.lt5 {
+    transform: rotate(-38deg) rotateX(var(--rotate-x)) rotateY(var(--rotate-y));
+}
+
+.lacetop.lt6 {
+    transform: rotate(-23deg) rotateX(var(--rotate-x)) rotateY(var(--rotate-ya));
+}
+
+.lacetop.lt7 {
+    transform: rotate(-8deg) rotateX(var(--rotate-x)) rotateY(var(--rotate-y));
+}
+
+.lacetop.lt8 {
+    transform: rotate(7deg) rotateX(var(--rotate-x)) rotateY(var(--rotate-ya));
+}
+
+.lacetop.lt9 {
+    transform: rotate(22deg) rotateX(var(--rotate-x)) rotateY(var(--rotate-y));
+}
+
+.lacetop.lt10 {
+    transform: rotate(37deg) rotateX(var(--rotate-x)) rotateY(var(--rotate-ya));
+}
+
+.lacetop.lt11 {
+    transform: rotate(52deg) rotateX(var(--rotate-x)) rotateY(var(--rotate-y));
+}
+
+.lacetop.lt12 {
+    transform: rotate(67deg) rotateX(var(--rotate-x)) rotateY(var(--rotate-ya));
+}
+
+.lacetop.lt13 {
+    transform: rotate(82deg) rotateX(var(--rotate-x)) rotateY(var(--rotate-y));
+}
+
+.lacetop.lt14 {
+    transform: rotate(97deg) rotateX(var(--rotate-x)) rotateY(var(--rotate-ya));
+    clip-path: polygon(0 0, 100% 0, 100% 22%, 16% 100%, 0 100%);
+}
+
+.lacetop.lt15 {
+    transform: rotate(118deg) rotateX(var(--rotate-x)) rotateY(var(--rotate-y));
+}
+
+.lacetop.lt16 {
+    transform: rotate(233deg) rotateX(var(--rotate-x)) rotateY(var(--rotate-ya));
+}
+
+.lacetop.lt17 {
+    transform: rotate(248deg) rotateX(var(--rotate-x)) rotateY(var(--rotate-y));
+}
+
+.neck {
+    left: 28%;
+    top: 49%;
+    height: 37%;
+    width: 63%;
+    overflow: hidden;
+    transform: rotate(-9deg);
+    clip-path: polygon(0 0, 100% 0, 95% 40%, 100% 100%, 0 100%);
+}
+
+.neckshape {
+    width: 102%;
+    height: 100%;
+    left: 0%;
+    background-color: #c5a58f;
+    background-image: radial-gradient(circle at 23% 7%, #351f1d5c 39%, transparent 44%), linear-gradient(96deg, #2b1816 6%, #603e34 11%, #c5b298 28%, #f5d4b6, #d3c1a7 77%, #9e857d 87%, #6d5144);
+    border-radius: 50% 50% 60% 40% / 4% 6% 66% 23%;
+    filter: blur(0.6em);
+}
+
+.neckshape:after {
+    height: 90%;
+    width: 97%;
+    border-radius: 0 0 70% 30% / 0 0 90% 50%;
+    top: -25%;
+    left: -15%;
+    background: #4c302d;
+    opacity: 0.6;
+    filter: blur(0.8em);
+}
+
+.darkshadow {
+    width: 63%;
+    height: 45%;
+    background-image: radial-gradient(ellipse at 46% 62%, #00000091 42%, transparent 62%);
+    right: 30%;
+    bottom: 50%;
+    transform-origin: 50% 100%;
+    transform: rotateX(-1deg) rotateZ(-21deg) translateZ(10.7em);
+}
+
+.lightreflect {
+    width: 49%;
+    height: 43%;
+    bottom: 39%;
+    left: 38%;
+    background-image: radial-gradient(ellipse at 67% 57%, #ffffffa1, transparent 30%);
+    transform: rotate(28deg) rotateX(-12deg);
+    transform-style: preserve-3d;
+    transform-origin: 51% 100%;
+}
+
+.ear {
+    border-radius: 45% 56% 75% 25% / 23% 35% 65% 20%;
+    width: 14%;
+    height: 30%;
+    right: 15%;
+    top: 55%;
+    background-image: radial-gradient(ellipse at 43% 53%, #906565, transparent 48%), linear-gradient(-90deg, #c2a493 77%, transparent);
+    box-shadow: 0.3em 1.7em 0.8em -0.9em #230d0d8a;
+}
+
+.ear:after {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    box-shadow: inset -0.9em 0.4em 0.3em -0.6em #a27171, inset -0.2em -1.1em 1.0em -0.6em #754141, inset -1.1em 1.0em 0.8em -0.6em #d49f97;
+}
+
+.helix {
+    background-image: radial-gradient(ellipse at 69% 48%, #f1dbdb87, transparent 36%), linear-gradient(96deg, #9a675f, transparent 64%);
+    border-radius: 45% 56% 75% 23% / 83% 35% 65% 25%;
+    width: 71%;
+    height: 76%;
+    top: 9%;
+    left: 18%;
+    box-shadow: -1.0em -1.0em 0.8em -0.9em #c5aaa7, inset -0.1em 0.7em 0.3em 0.0em #542d2d, inset 0.1em 0.8em 0.4em -0.2em #a06e57;
+    overflow: hidden;
+}
+
+.tragus {
+    border-radius: 0 100% 100% 0% / 0% 41% 53% 5%;
+    width: 16%;
+    background: #bd9b8c;
+    height: 34%;
+    top: 49%;
+    left: -1%;
+    box-shadow: 0.2em 0.6em 0.3em -0.1em #5f282861, inset -0.1em 1.1em 0.8em -0.8em #f3dace82;
+}
+
+.antitragus {
+    border-radius: 45% 56% 47% 23% / 83% 26% 25% 17%;
+    width: 45%;
+    background: #bd9b8c;
+    height: 14%;
+    top: 71%;
+    left: 26%;
+    box-shadow: -0.7em -0.5em 0.3em -0.4em #713c3cab, inset -0.1em 1.1em 0.8em -0.8em #f3dace82;
+}
+
+.conch {
+    border-radius: 0% 90% 75% 23% / 0% 45% 55% 60%;
+    width: 77%;
+    height: 66%;
+    top: 26%;
+    left: -3%;
+    background-image: radial-gradient(ellipse at -13% 43%, #44030375 20%, transparent 39%);
+    box-shadow: inset 0.3em 0.8em 0.4em 0.2em #582c2ccf, 0.9em -0.6em 0.4em -0.4em #8c5757b0;
+}
+
+.updo {
+    width: 162%;
+    height: 3%;
+}
+
+.shoulders {
+    width: 220%;
+    height: 65%;
+    left: -46%;
+    top: 67%;
+}
+
+.bodice {
+    width: 169%;
+    height: 86%;
+    left: -21%;
+    top: 70%;
+    border-radius: 19% 5% 0 0 / 49% 22% 0 0;
+    overflow: hidden;
+}
+
+.bodice .sleevepuff {
+    background-image: radial-gradient(ellipse at 40% 50%, transparent 25%, #0c0c0cfa 92%), repeating-radial-gradient(circle at 153% 64%, transparent 0.1em, #00000026 1.1em, #f3e9e905 6.1em, #02020245 9.8em, transparent 10.0em);
+    background-color: #1b1b1b;
+    height: 92%;
+    width: 100%;
+}
+
+.sleevepuff.spb2 {
+    left: -1%;
+    border-radius: 45% 44% 53% 29% / 4% 20% 20% 34%;
+    box-shadow: inset 2.4em -7.0em 6.3em -0.7em #0000006b, -0.3em 6.3em 3.0em -1.7em #0000007d;
+}
+
+.sleevepuff.spb1 {
+    top: 79%;
+    height: 23%;
+    left: 10%;
+    border-radius: 0 0 50% 7% / 0 0 20% 75%;
+    box-shadow: inset 6.4em 0.1em 4.8em -0.8em #00000078;
+}
+
+.string {
+    width: 5em;
+    color: inherit;
+}
+
+.string.s1 {
+    transform: rotate(37deg);
+    top: 9%;
+    left: 9%;
+    height: 32%;
+}
+
+.string.s2 {
+    transform: rotate(66deg);
+    top: -11%;
+    left: 38%;
+    height: 32%;
+}
+
+.string.s3 {
+    transform: rotate(96deg);
+    top: -10%;
+    right: 27%;
+    height: 20%;
+}
+
+/* - */
+.string.s4 {
+    transform: rotate(37deg);
+    top: 9%;
+    left: 9%;
+    height: 32%;
+}
+
+.string.s5 {
+    transform: rotate(68deg);
+    top: -10%;
+    left: 37%;
+    height: 32%;
+}
+
+.string.s6 {
+    transform: rotate(96deg);
+    top: -12%;
+    right: 20%;
+    height: 28%;
+}
+
+/* - */
+.string.s7 {
+    transform: rotate(94deg);
+    top: -11%;
+    left: 34%;
+    height: 20%;
+}
+
+.string.s8 {
+    transform: rotate(116deg);
+    top: -8%;
+    left: 64%;
+    height: 30%;
+}
+
+.string.s9 {
+    transform: rotate(131deg);
+    top: 13%;
+    right: 6%;
+    height: 10%;
+}
+
+/* - */
+.string.s10 {
+    transform: rotate(90deg);
+    top: -9%;
+    left: 27%;
+    height: 20%;
+}
+
+.string.s11 {
+    transform: rotate(103deg);
+    top: -8%;
+    left: 56%;
+    height: 25%;
+}
+
+.string.s12 {
+    transform: rotate(129deg);
+    top: 5%;
+    right: 3%;
+    height: 20%;
+}
+
+/* - */
+.string.s13 {
+    transform: rotate(103deg);
+    bottom: -8%;
+    left: 19%;
+    height: 23%;
+}
+
+.string.s14 {
+    transform: rotate(89deg);
+    bottom: -21%;
+    left: 45.6%;
+    height: 45%;
+}
+
+.string.s15 {
+    transform: rotate(78deg);
+    bottom: -9%;
+    right: 22.2%;
+    height: 27.6%;
+}
+
+.pearl {
+    background-image: radial-gradient(circle at 59% 36%, #adb0bb 6%, #d6b8b829 17%, transparent 28%), radial-gradient(circle at 58% 41%, #4c3f3c 34%, transparent 47%), radial-gradient(circle at 50% 50%, #222c3c 43%, transparent 69%), radial-gradient(circle at 50% 50%, #907f7f, #211a1a 69%, transparent 71%), linear-gradient(to right, transparent, #0c0c0ce3, transparent);
+    background-position: center 0;
+    background-size: 2.0em 2.0em;
+    background-repeat: repeat-y;
+}
+
+.sleevepuff .pearl {
+    background-blend-mode: difference;
+}
+
+.pearl:after {
+    width: 100%;
+    height: 100%;
+}
+
+.pearl.sm {
+    /* background-size: 1.0em 1.0em; */
+}
+
+.shoulders .pearl {
+    background-image: radial-gradient(circle at 59% 36%, #ebedf5 6%, #d6b8b829 17%, transparent 28%), radial-gradient(circle at 57% 38%, #a09796 34%, transparent 47%), radial-gradient(circle at 51% 47%, #737579 43%, transparent 69%), radial-gradient(circle at 50% 50%, #c5bfbf, #46464680 69%, transparent 71%), linear-gradient(to right, transparent, black 40%, black 60%, transparent);
+    transform-origin: 50% 0;
+    width: 4.5em;
+}
+
+.pearl.sa {
+    left: 30%;
+    height: 27%;
+    top: 5%;
+    transform: rotate(12deg);
+}
+
+.pearl.sb {
+    left: 27%;
+    height: 27%;
+    top: 31.5%;
+    transform: rotate(2deg);
+}
+
+.pearl.sc {
+    left: 26.7%;
+    height: 49%;
+    top: 59%;
+    transform: rotate(-12deg);
+}
+
+.pearl.sd {
+    left: 32%;
+    height: 49%;
+    top: 107%;
+    transform: rotate(2deg);
+}
+
+.pearl.sf {
+    top: 3%;
+    left: 63%;
+    height: 34%;
+    transform: rotate(20deg);
+}
+
+.pearl.sg {
+    top: 35%;
+    left: 57%;
+    height: 34%;
+    transform: rotate(30deg);
+}
+
+.pearl.sh {
+    top: 65%;
+    left: 48%;
+    height: 50%;
+    transform: rotate(31deg);
+}
+
+.pearl.sj {
+    left: 34.5%;
+    height: 49%;
+    top: 107%;
+    transform: rotate(-2deg);
+}
+
+.pearl.se {
+    left: 32%;
+    height: 20%;
+    top: 5%;
+    transform: rotate(2deg);
+}
+
+.pearl.sk {
+    left: 61%;
+    height: 20%;
+    top: 1%;
+    transform: rotate(22deg);
+}
+
+.pearl.sl {
+    left: 31.6%;
+    height: 10%;
+    top: 25%;
+    transform: rotate(-12deg);
+}
+
+.pearl.sm {
+    left: 57.16%;
+    height: 17%;
+    top: 19.5%;
+    transform: rotate(41deg);
+}
+
+.pearl.sn {
+    left: 32.6%;
+    height: 10%;
+    top: 34.5%;
+    transform: rotate(-50deg);
+}
+
+.pearl.so {
+    left: 47%;
+    height: 10%;
+    top: 38.4%;
+    transform: rotate(-126deg);
+}
+
+.pearl.sp {
+    left: 42%;
+    height: 10.25%;
+    top: 41.4%;
+    transform: rotate(-109deg);
+}
+
+.pearl.sq {
+    left: 36.6%;
+    height: 11%;
+    top: 40.51%;
+    transform: rotate(-85deg);
+}
+
+.pearlring {
+    height: 5%;
+    width: 6%;
+    top: 106%;
+    left: 32.5%;
+    border-radius: 25% 25% 50% 50% / 22% 25% 59% 72%;
+    background-image: linear-gradient(to right, #252525, #9a9898, #2d2c2c);
+    box-shadow: inset 0 -0.7em 0.1em -0.2em #00000057, inset 0 -0.5em 0.5em 0.8em #00000057, 0 0.3em 0.5em -0.2em black;
+}
+
+.decolletage {
+    width: 25%;
+    height: 82%;
+    left: 38%;
+    top: 5%;
+    border-radius: 0 0 48% 43% / 0 0 84% 70%;
+    background-color: #d6b899;
+    background-image: linear-gradient(96deg, #7b6157 11%, #a79388 21%, #C7B191 36%, #f9d7b8 64%, #e2bda8 88%);
+    transform: rotate(21deg);
+    transform-origin: 100% 0;
+    border: 0.0em double #ffffff7a;
+    box-shadow: inset 0.6em -0.8em 1.3em -0.6em #441f1b40, 0 0 0.2em 0.7em #c7c6c6d1;
+}
+
+.collar {
+    width: 10.0em;
+    height: 10.0em;
+    transform-style: preserve-3d;
+}
+
+.collar .arc {
+    color: #ffffff6b;
+}
+
+.collar.c1 {
+    left: 24%;
+    top: 2%;
+    transform: rotateZ(-86deg) rotateX(28deg) rotateY(57deg);
+}
+
+.collar.c2 {
+    left: 22%;
+    top: 16.5%;
+    transform: rotateZ(-99deg) rotateX(29deg) rotateY(38deg);
+}
+
+.collar.c3 {
+    left: 20.5%;
+    top: 34%;
+    transform: rotateZ(-99deg) rotateX(25deg) rotateY(31deg);
+}
+
+.collar.c4 {
+    left: 21%;
+    top: 54%;
+    transform: rotateZ(-113deg) rotateX(20deg) rotateY(21deg);
+}
+
+.collar.c5 {
+    left: 31.5%;
+    top: 72%;
+    transform: rotateZ(-170deg) rotateX(12deg) rotateY(-3deg) scaleX(1.35);
+}
+
+.collar.c6 {
+    left: 44%;
+    top: 64.5%;
+    transform: rotateZ(141deg) rotateX(0deg) rotateY(1deg);
+}
+
+.collar.c7 {
+    left: 51%;
+    top: 49.4%;
+    transform: rotateZ(125deg) rotateX(-2deg) rotateY(6deg);
+}
+
+.collar.c8 {
+    left: 56.26%;
+    top: 32%;
+    transform: rotateZ(114deg) rotateX(-2deg) rotateY(0deg);
+}
+
+.collar.c9 {
+    left: 60.5%;
+    top: 15%;
+    transform: rotateZ(114deg) rotateX(1deg) rotateY(22deg);
+}
+
+.collar.c10 {
+    left: 62.5%;
+    top: 2%;
+    transform: rotateZ(114deg) rotateX(-4deg) rotateY(64deg);
+}
+
+.armright {
+    width: 66%;
+    height: 75%;
+    right: -93%;
+    top: 82%;
+    border-radius: 37% 61% 0 0 / 67% 29% 0 0;
+    transform: rotate(-7deg);
+    box-shadow: -3.8em 3.4em 3.9em 1.4em #00000087;
+}
+
+.armleft {
+    width: 42%;
+    height: 65%;
+    left: -44%;
+    top: 77%;
+    transform: rotate(19deg);
+    border-radius: 0 90% 0 0 / 0 80% 0 0;
+    box-shadow: 3.8em 5.1em 3.0em 0.3em #00000082;
+}
+
+.armleft .sleevepuff {
+    width: 101%;
+    background-color: #1b1a1a;
+    border-radius: 50% 0 0 50%;
+    height: 69%;
+    box-shadow: inset -5.3em -2.1em 4.8em 0.1em #0000005e, inset 2.3em -2.1em 4.8em 3.1em #0000005e, -0.2em -1.9em 2.1em -0.2em #0000003d;
+    background-image: radial-gradient(ellipse at 40% 50%, transparent 25%, #0c0c0cfa 92%), repeating-radial-gradient(circle at 153% 64%, transparent 0.1em, #00000026 1.1em, #f3e9e905 6.1em, #02020245 9.8em, transparent 10.0em);
+}
+
+.armright .sleevepuff {
+    background-color: #1b1a1a;
+    height: 73%;
+    box-shadow: inset 7.8em -2.1em 4.8em -1.5em #0000005e, inset 0.3em 3.6em 1.5em -0.2em #0000000d, -0.2em -1.9em 2.1em -0.2em #00000038;
+    background-image: radial-gradient(ellipse at 40% 50%, transparent 25%, #0c0c0cfa 92%), repeating-radial-gradient(circle at -50% 55%, transparent 0.1em, #00000026 1.1em, #f3e9e905 6.1em, #02020245 9.8em, transparent 10.0em);
+}
+
+.sleevepuff .pearl:first-child:after, .sleevepuff .pearl:first-child:after {
+    background-image: linear-gradient(to top, #0c0c0c9c 9%, transparent 74%);
+}
+
+.sleevepuff .pearl:last-child:after, .sleevepuff .pearl:last-child:after {
+    background-image: linear-gradient(to bottom, #0c0c0c9c 9%, transparent 74%);
+}
+
+.sleevepuff.spa {
+    top: 0%;
+    left: -17%;
+    width: 107%;
+    transform: rotate(-9deg);
+    border-radius: 66% 37% 5% 41% / 49% 53% 41% 51%;
+}
+
+.sleevepuff.spb {
+    top: 45%;
+    left: -34%;
+    width: 150%;
+    transform: rotate(-9deg);
+    border-radius: 32% 65% 27% 41% / 49% 40% 41% 51%;
+}
+
+.sleevepuff.spc {
+    top: 97%;
+    left: -35%;
+    width: 151%;
+    transform: rotate(-9deg);
+    border-radius: 32% 62% 27% 41% / 49% 20% 41% 51%;
+}
+
+.sleevepuff.sp3 {
+    top: 69%;
+    width: 138%;
+    left: -2%;
+    border-radius: 74% 14% 55% 44% / 49% 49% 46% 38%;
+}
+
+.sleevepuff.sp2 {
+    top: 33%;
+    left: -5%;
+    margin: auto;
+    width: 131%;
+    border-radius: 66% 25% 55% 44% / 49% 62% 37% 43%;
+}
+
+.sleevepuff.sp1 {
+    top: 0;
+    left: -17%;
+    width: 117%;
+    transform: rotate(-9deg);
+    border-radius: 66% 37% 27% 41% / 49% 53% 41% 51%;
+}
+
+.hair.left.lashes {
+    width: 36%;
+    height: 12%;
+    top: 35%;
+    right: 31%;
+    color: #6f5043;
+    transform: scaleY(-1) rotate(29deg);
+    border-radius: 7% 92% 12% 2% / 9% 84% 14% 12%;
+}
+
+.hair.left.bottomlashes {
+    width: 48%;
+    height: 20%;
+    top: 56%;
+    left: 24%;
+    color: #462c2091;
+    transform: scaleX(-1) rotate(-19deg);
+    border-radius: 15% 11% 47% 2% / 9% 29% 57% 4%;
+}
+
+.hair.right.lashes {
+    width: 15%;
+    height: 7%;
+    top: 46%;
+    right: 38%;
+    color: #6d5247;
+    transform: scaleY(-1) scaleX(-1) rotate(19deg);
+    border-radius: 7% 92% 12% 2% / 9% 84% 14% 12%;
+}
+
+.hair.right.bottomlashes {
+    width: 21%;
+    height: 10%;
+    top: 61%;
+    right: 31%;
+    color: #462c203b;
+    transform: scaleX(1) rotate(-29deg);
+    border-radius: 15% 11% 47% 2% / 9% 29% 57% 4%;
+}
+
+.hair.browleft {
+    width: 15%;
+    height: 2.43%;
+    top: 32%;
+    left: 3%;
+    color: #3a221794;
+    transform: scaleY(-1) scaleX(1) rotate(-4deg);
+    border-radius: 15% 11% 47% 2% / 9% 29% 57% 4%;
+}
+
+.hair.browright {
+    width: 30%;
+    height: 10%;
+    top: 11%;
+    right: 55%;
+    color: #735547f2;
+    transform: scaleY(-1) scaleX(-1) rotate(-10deg);
+    border-radius: 15% 11% 47% 2% / 9% 29% 57% 4%;
+}
+
+.pearlstringshadow {
+    left: 32.4%;
+    width: 25%;
+    height: 40%;
+    top: 4%;
+    border-radius: 0 0 64% 36% / 0 0 99% 73%;
+    box-shadow: 0 8px 7px 4px #54373785;
+    transform: rotate(21deg);
+}
