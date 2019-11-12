@@ -77,7 +77,7 @@ div:after, div:before {
 
 .head {
     background-color: #f3d5bb;
-    background-image: radial-gradient(circle at 56% 9%, #da1f2821 8%, transparent 29%), radial-gradient(circle at 52% 16%, #f7f2e2 5%, transparent 27%), radial-gradient(circle at 16% 16%, #907b65b8 15%, transparent 26%), linear-gradient(98deg, rgba(125, 91, 61, 0.76) 14%, transparent 31%) ,radial-gradient(ellipse closest-corner at 35% 50%, #dac5a6, #c39f7d);
+    background-image: radial-gradient(circle at 56% 9%, #da1f2821 8%, rgba(254, 251, 251, 0) 29%), radial-gradient(circle at 52% 16%, #f7f2e2 5%, rgba(253, 246, 235, 0) 27%), radial-gradient(circle at 16% 16%, #907b65b8 15%, rgba(115, 92, 59, 0) 26%), linear-gradient(98deg, rgba(125, 91, 61, 0.76) 14%, rgba(111, 80, 51, 0) 31%) ,radial-gradient(ellipse closest-corner at 35% 50%, #dac5a6, #c39f7d);
     overflow: hidden;
     width: 90%;
     height: 70%;
@@ -85,7 +85,7 @@ div:after, div:before {
     position: absolute;
     border-radius: 29% 54% 70% 30% / 43% 45% 50% 56%;
     box-shadow: -0.3em -2.7em 1.1em -2em #b59e83, 3.5em -5.1em 1.5em -4.4em #b79c7d, inset -0.5em -1.1em 1.8em -1.1em #7b6246, inset -0.4em 1.6em 0.9em -0.8em #b59c7f, inset -0.7em -0.9em 1.9em -1em #af8376, inset 2.2em -3em 2.4em -1em #291010, inset -4em -2.7em 8em 0.3em #947968, inset -6em -0.2em 8em 3em #cdccaf, 1.3em 2.7em 0.8em -2em #2d040442, -14px -1px 8px -11px #150d0da8;
-    text-shadow: 0 0 black;
+    text-shadow: 0 0 black;z-index: 9;transform: translateZ(99em);
 }
 
 .noseshadow {
@@ -105,13 +105,13 @@ div:after, div:before {
 .nose:after {
     bottom: 29%;
     right: 41%;
-    box-shadow: -2em 1.9em 1em 0.9em #f9eeee, 0 0 5.8em 3.6em rgba(197, 104, 84, 0.87);
+    box-shadow: -2em 1.9em 1em 0.9em #f9eeee, 0 0 5.8em 3.6em #c56854de;
 }
 
 .nose .tip {
     border-radius: 34% 54% 30% 46% / 62% 52% 45% 37%;
     background-color: #deb4a5;
-    background-image: radial-gradient(ellipse at 44% 7%, #fdf6f6 9%, transparent 29%), linear-gradient(105deg, #461a1a 9%, transparent 21%), radial-gradient(ellipse at 71% 37%, #f7f0e2, transparent 55%), radial-gradient(ellipse farthest-corner at 130% 33%, transparent 49%, #9e7b5a 133%), radial-gradient(ellipse at 62% 33%, #ecddc2, transparent);
+    background-image: radial-gradient(ellipse at 44% 7%, #fdf6f6 9%, rgba(247, 228, 226, 0) 29%), linear-gradient(105deg, #461a1a 9%, transparent 21%), radial-gradient(ellipse at 71% 37%, #f7f0e2, rgba(252, 251, 250, 0) 55%), radial-gradient(ellipse farthest-corner at 130% 33%, transparent 49%, #9e7b5a 133%), radial-gradient(ellipse at 62% 33%, #ecddc2, rgba(237, 223, 216, 0));
     width: 80%;
     height: 37%;
     bottom: 0;
@@ -221,7 +221,7 @@ div:after, div:before {
 
 .topleftlip {
     background-color: #d08178;
-    background-image: linear-gradient(31deg, #1f0303 39%, #752727, transparent 96%);
+    background-image: linear-gradient(31deg, #1f0303 39%, #752727, rgba(99, 54, 34, 0) 96%);
     box-shadow: inset 1.4em 0.2em 0.6em -0.6em #502323, inset -0.5em 0.3em 0.3em -0.3em #ad8162;
     height: 106%;
     left: 0%;
@@ -233,7 +233,7 @@ div:after, div:before {
 
 .toprightlip {
     background-color: #ce9590;
-    background-image: linear-gradient(1deg, #632922, #773630, transparent 80%);
+    background-image: linear-gradient(1deg, #632922, #773630, rgba(110, 35, 32, 0) 80%);
     box-shadow: inset 0.0em 0.8em 0.4em -0.5em #dcbcab;
     height: 118%;
     bottom: 0;
@@ -266,7 +266,7 @@ div:after, div:before {
     background-color: #efb8b8;
     border-radius: 0% 0 62% 34% / 0% 0 99% 93%;
     box-shadow: 1.4em 0.9em 0.7em -1.2em #d0a7a2, -0.4em 0.1em 0.3em 0.0em #581f1f, -1.0em 2.1em 1.1em -1.0em #502020bd, -2.2em 1.4em 1.8em 0.4em #38201396;
-    background-image: radial-gradient(ellipse at 48% 45%, #dc7e7e, transparent 48%), linear-gradient(99deg, #460808, transparent);
+    background-image: radial-gradient(ellipse at 48% 45%, #dc7e7e, rgba(246, 150, 161, 0) 48%), linear-gradient(99deg, #460808, rgba(89, 20, 16, 0));
 }
 
 .bottomrightlip {
@@ -284,7 +284,7 @@ div:after, div:before {
     width: 27%;
     height: 11%;
     filter: blur(0.4em);
-    background-image: radial-gradient(ellipse at 92% 68%, transparent 50%, #f3eede36, transparent 81%), radial-gradient(ellipse at 60% 68%, #d810501f, transparent 61%), radial-gradient(ellipse at 43% 23%, #f3e1bb, transparent 40%);
+    background-image: radial-gradient(ellipse at 92% 68%, transparent 50%, #f3eede36, rgba(255, 255, 255, 0) 81%), radial-gradient(ellipse at 60% 68%, #d810501f, rgba(243, 232, 233, 0) 61%), radial-gradient(ellipse at 43% 23%, #f3e1bb, rgba(249, 238, 235, 0) 40%);
 }
 
 .mouthcorner {
@@ -311,7 +311,7 @@ div:after, div:before {
     height: 46%;
     left: 1%;
     top: 5%;
-    background-image: radial-gradient(ellipse closest-side at 50% 50%, #3c1d111f 67%, transparent);
+    background-image: radial-gradient(ellipse closest-side at 50% 50%, #3c1d111f 67%, rgba(69, 31, 28, 0));
     border-radius: 50% 50% 30% 70% / 50% 50% 50% 50%;
 }
 
@@ -320,7 +320,7 @@ div:after, div:before {
     height: 26%;
     left: 29%;
     top: 30.3%;
-    background-image: radial-gradient(ellipse closest-side at 50% 49%, #a98e77 53%, transparent 83%), radial-gradient(ellipse closest-side at 50% 50%, #ad8e79 10%, transparent 100%);
+    background-image: radial-gradient(ellipse closest-side at 50% 49%, #a98e77 53%, rgba(214, 176, 156, 0) 83%), radial-gradient(ellipse closest-side at 50% 50%, #ad8e79 10%, rgba(215, 190, 164, 0));
 }
 
 .cheek {
@@ -330,7 +330,7 @@ div:after, div:before {
     width: 57%;
     height: 40%;
     filter: blur(0.5em);
-    background-image: radial-gradient(ellipse at 40% 65%, rgba(220, 0, 51, 0.08) 8%, transparent 46%), radial-gradient(ellipse at 24% 50%, rgba(255, 252, 247, 0.6), transparent 20%), radial-gradient(ellipse at 64% 56%, rgba(255, 255, 255, 0.42), transparent 28%);
+    background-image: radial-gradient(ellipse at 40% 65%, rgba(220, 0, 51, 0.08) 8%, transparent 46%), radial-gradient(ellipse at 24% 50%, rgba(255, 252, 247, 0.6), rgba(255, 255, 255, 0) 20%), radial-gradient(ellipse at 64% 56%, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0) 28%);
     box-shadow: inset -2.2em -8.3em 4.0em -5.9em rgba(128, 98, 98, 0.5), 2.6em 4.9em 4.0em -2.5em rgba(128, 98, 98, 0.5);
 }
 
@@ -356,7 +356,7 @@ div:after, div:before {
     height: 33%;
     bottom: 15%;
     left: 23%;
-    background-image: radial-gradient(ellipse at 53% 44%, #a98578 35%, transparent 54%), radial-gradient(ellipse at 53% 11%, #744e40 34%, #94765e, transparent 66%);
+    background-image: radial-gradient(ellipse at 53% 44%, #a98578 35%, rgba(213, 170, 155, 0) 54%), radial-gradient(ellipse at 53% 11%, #744e40 34%, #94765e, rgba(129, 101, 50, 0) 66%);
 }
 
 .eyeright .eye {
@@ -537,7 +537,7 @@ div:after, div:before {
     bottom: 9%;
     left: 18%;
     box-shadow: -0.4em 1.7em 1.2em -0.9em #6b4936c4, -0.2em 4.5em 1.4em -0.5em #f2e0d333;
-    background-image: radial-gradient(ellipse closest-side at 60% 46%, #a9877a 10%, transparent 102%), radial-gradient(ellipse at 50% 13%, #5a462e 33%, #61312263, transparent 72%), linear-gradient(to right, #5a4035, transparent);
+    background-image: radial-gradient(ellipse closest-side at 60% 46%, #a9877a 10%, transparent 102%), radial-gradient(ellipse at 50% 13%, #5a462e 33%, #61312263, rgba(94, 43, 46, 0) 72%), linear-gradient(to right, #5a4035, rgba(76, 38, 40, 0));
 }
 
 .eyeleft .lash {
@@ -681,10 +681,11 @@ div:after, div:before {
     box-shadow: inset -0.9em 0.9em 5.0em 0.9em #130c0a;
     background-blend-mode: normal, screen;
     overflow: visible;
+    transform: translateZ(95em);
 }
 
 .hairshape.front {
-    filter: blur(0.1em);
+    filter: blur(0.1em);z-index: 10;transform: translateZ(100em);
 }
 
 .hairshape.front:after {
@@ -961,7 +962,7 @@ div:after, div:before {
     top: 1%;
     height: 12%;
     width: 27%;
-    transform: rotate(147deg) scaleY(-1);
+    transform: rotate(147deg) scaleY(-1) translateZ(98em);
     border-color: #58442e;
 }
 
@@ -972,7 +973,7 @@ div:after, div:before {
     width: 19%;
     transform: rotate(44deg) scaleY(-1) scaleX(-1);
     border-color: #86684b8f;
-    background-image: radial-gradient(circle at 16% 88%, #583f28, transparent 27%);
+    background-image: radial-gradient(circle at 16% 88%, #6f4e30, rgba(119, 35, 32, 0) 27%);
 }
 
 .hair.h19 {
@@ -982,7 +983,7 @@ div:after, div:before {
     width: 17%;
     transform: rotate(13deg) scaleY(-1) scaleX(-1);
     border-color: #7b5d3e75;
-    background-image: radial-gradient(circle at 16% 83%, #886d54, transparent 27%);
+    background-image: radial-gradient(circle at 16% 83%, #886d54, rgba(232, 178, 161, 0) 27%);
 }
 
 .hair.h20 {
@@ -990,7 +991,7 @@ div:after, div:before {
     top: 3%;
     height: 12%;
     width: 25%;
-    transform: rotate(136deg) scaleY(-1);
+    transform: rotate(136deg) scaleY(-1) translateZ(98em);
     border-color: #403121;
 }
 
@@ -1036,13 +1037,13 @@ div:after, div:before {
 .neckruff.top {
     top: 22%;
     transform: rotateY(18deg) rotateX(-20deg) rotateZ(4deg) scaleY(0.999) translateZ(-10.9em);
-    left: -4%;
+    left: -4%;z-index: -99999;
 }
 
 .neckruff.bottom {
     top: 31%;
     left: -1%;
-    transform: rotateY(3deg) rotateX(48deg) rotateZ(6deg) scaleY(1.325) scaleX(1.05) translateZ(-2.3em);
+    transform: rotateY(3deg) rotateX(48deg) rotateZ(6deg) scaleY(1.325) scaleX(1.05) translateZ(-2.3em);z-index: -999;
 }
 
 .lacetop {
@@ -1313,7 +1314,7 @@ div:after, div:before {
     height: 37%;
     width: 63%;
     overflow: hidden;
-    transform: rotate(-9deg);
+    transform: rotate(-9deg) translateZ(97em);
     clip-path: polygon(0 0, 100% 0, 95% 40%, 100% 100%, 0 100%);
 }
 
@@ -1426,7 +1427,7 @@ div:after, div:before {
     width: 220%;
     height: 65%;
     left: -46%;
-    top: 67%;
+    top: 67%;transform: translateZ(95em);
 }
 
 .bodice {
@@ -1434,8 +1435,8 @@ div:after, div:before {
     height: 86%;
     left: -21%;
     top: 70%;
-    border-radius: 19% 5% 0 0 / 49% 22% 0 0;
-    overflow: hidden;
+    border-radius: 19% 5% 0 0 / 58% 22% 0 0;
+    overflow: hidden;transform: translateZ(93em);
 }
 
 .bodice .sleevepuff {
@@ -1447,7 +1448,7 @@ div:after, div:before {
 
 .sleevepuff.spb2 {
     left: -1%;
-    border-radius: 45% 44% 53% 29% / 4% 20% 20% 34%;
+    border-radius: 66% 34% 53% 29% / 12% 20% 20% 34%;
     box-shadow: inset 2.4em -7.0em 6.3em -0.7em #0000006b, -0.3em 6.3em 3.0em -1.7em #0000007d;
 }
 
@@ -1597,6 +1598,7 @@ div:after, div:before {
     background-image: radial-gradient(circle at 59% 36%, #ebedf5 6%, #d6b8b829 17%, transparent 28%), radial-gradient(circle at 57% 38%, #a09796 34%, transparent 47%), radial-gradient(circle at 51% 47%, #737579 43%, transparent 69%), radial-gradient(circle at 50% 50%, #c5bfbf, #46464680 69%, transparent 71%), linear-gradient(to right, transparent, black 40%, black 60%, transparent);
     transform-origin: 50% 0;
     width: 4.5em;
+    z-index: 88888888;
 }
 
 .pearl.sa {
@@ -1719,6 +1721,7 @@ div:after, div:before {
     border-radius: 25% 25% 50% 50% / 22% 25% 59% 72%;
     background-image: linear-gradient(to right, #252525, #9a9898, #2d2c2c);
     box-shadow: inset 0 -0.7em 0.1em -0.2em #00000057, inset 0 -0.5em 0.5em 0.8em #00000057, 0 0.3em 0.5em -0.2em black;
+    transform: translateZ(100em);
 }
 
 .decolletage {
@@ -1732,7 +1735,7 @@ div:after, div:before {
     transform: rotate(21deg);
     transform-origin: 100% 0;
     border: 0.0em double #ffffff7a;
-    box-shadow: inset 0.6em -0.8em 1.3em -0.6em #441f1b40, 0 0 0.2em 0.7em #c7c6c6d1;
+    box-shadow: inset 0.6em -0.8em 1.3em -0.6em #441f1b40, 0 0 0.2em 0.7em #c7c6c6d1;z-index: 9999999;
 }
 
 .collar {
@@ -1811,7 +1814,7 @@ div:after, div:before {
     right: -93%;
     top: 82%;
     border-radius: 37% 61% 0 0 / 67% 29% 0 0;
-    transform: rotate(-7deg);
+    transform: rotate(-7deg) translateZ(95em);
     box-shadow: -3.8em 3.4em 3.9em 1.4em #00000087;
 }
 
@@ -1820,7 +1823,7 @@ div:after, div:before {
     height: 65%;
     left: -44%;
     top: 77%;
-    transform: rotate(19deg);
+    transform: rotate(19deg) translateZ(93em);
     border-radius: 0 90% 0 0 / 0 80% 0 0;
     box-shadow: 3.8em 5.1em 3.0em 0.3em #00000082;
 }
@@ -1964,4 +1967,5 @@ div:after, div:before {
     border-radius: 0 0 64% 36% / 0 0 99% 73%;
     box-shadow: 0 8px 7px 4px #54373785;
     transform: rotate(21deg);
+    z-index: 88888888;
 }
