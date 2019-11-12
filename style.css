@@ -1,24 +1,3 @@
-@keyframes stab {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(30deg);
-    }
-}
-
-@keyframes spurt {
-    0% {
-        opacity: 1;
-        transform: translateX(0) translateY(0);
-    }
-
-    100% {
-        transform: translateX(-90.0em) translateY(-90.0em);
-    }
-}
-
 html {
     overflow-x: hidden;
     font-size: 10px;
@@ -402,6 +381,7 @@ div:after, div:before {
     width: 75%;
     height: 58%;
     background-color: #8e6c4c;
+    background-image: linear-gradient(131deg, rgba(14, 7, 4, 0.89) 31%, transparent 61%), radial-gradient(transparent 33%, #271a06 84%);
     background-image: linear-gradient(131deg, rgba(14, 7, 4, 0.89) 31%, transparent 61%), radial-gradient(transparent 33%, #271a06 84%), repeating-conic-gradient(transparent, rgba(53, 37, 37, 0.52) 20deg, transparent 30deg);
     box-shadow: 0 0 0.3em 0.2em #3e2909;
     border-radius: 50%;
@@ -619,6 +599,7 @@ div:after, div:before {
     width: 73%;
     height: 72%;
     background-color: #8e6c4c;
+    background-image: linear-gradient(131deg, rgba(14, 7, 4, 0.84) 31%, transparent 61%), radial-gradient(transparent 33%, #271a06 84%);
     background-image: linear-gradient(131deg, rgba(14, 7, 4, 0.84) 31%, transparent 61%), radial-gradient(transparent 33%, #271a06 84%), repeating-conic-gradient(transparent, rgba(53, 37, 37, 0.52) 20deg, transparent 30deg);
     box-shadow: 0 0 0.3em 0.2em #3e2909;
     border-radius: 50%;
@@ -1182,6 +1163,24 @@ div:after, div:before {
     top: 2.6em;
     left: 0;
     right: 0;
+    background-image: linear-gradient(10deg, transparent 48%, currentColor, transparent 52%),
+        linear-gradient(20deg, transparent 48%, currentColor, transparent 52%),
+        linear-gradient(30deg, transparent 48%, currentColor, transparent 52%),
+        linear-gradient(40deg, transparent 48%, currentColor, transparent 52%),
+        linear-gradient(50deg, transparent 48%, currentColor, transparent 52%),
+        linear-gradient(60deg, transparent 48%, currentColor, transparent 52%),
+        linear-gradient(70deg, transparent 48%, currentColor, transparent 52%),
+        linear-gradient(80deg, transparent 48%, currentColor, transparent 52%),
+        linear-gradient(90deg, transparent 48%, currentColor, transparent 52%),
+        linear-gradient(100deg, transparent 48%, currentColor, transparent 52%),
+        linear-gradient(110deg, transparent 48%, currentColor, transparent 52%),
+        linear-gradient(120deg, transparent 48%, currentColor, transparent 52%),
+        linear-gradient(130deg, transparent 48%, currentColor, transparent 52%),
+        linear-gradient(140deg, transparent 48%, currentColor, transparent 52%),
+        linear-gradient(150deg, transparent 48%, currentColor, transparent 52%),
+        linear-gradient(160deg, transparent 48%, currentColor, transparent 52%),
+        linear-gradient(170deg, transparent 48%, currentColor, transparent 52%),
+        linear-gradient(180deg, transparent 48%, currentColor, transparent 52%);
     background-image: repeating-conic-gradient(from 0deg at 50% 80%, currentColor, currentColor 4deg, transparent 6deg, transparent 18deg);
 }
 
