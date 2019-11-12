@@ -85,7 +85,9 @@ div:after, div:before {
     position: absolute;
     border-radius: 29% 54% 70% 30% / 43% 45% 50% 56%;
     box-shadow: -0.3em -2.7em 1.1em -2em #b59e83, 3.5em -5.1em 1.5em -4.4em #b79c7d, inset -0.5em -1.1em 1.8em -1.1em #7b6246, inset -0.4em 1.6em 0.9em -0.8em #b59c7f, inset -0.7em -0.9em 1.9em -1em #af8376, inset 2.2em -3em 2.4em -1em #291010, inset -4em -2.7em 8em 0.3em #947968, inset -6em -0.2em 8em 3em #cdccaf, 1.3em 2.7em 0.8em -2em #2d040442, -14px -1px 8px -11px #150d0da8;
-    text-shadow: 0 0 black;z-index: 9;transform: translateZ(99em);
+    text-shadow: 0 0 black;
+    z-index: 9;
+    transform: translateZ(99em);
 }
 
 .noseshadow {
@@ -381,7 +383,8 @@ div:after, div:before {
     width: 75%;
     height: 58%;
     background-color: #8e6c4c;
-    background-image: linear-gradient(131deg, rgba(14, 7, 4, 0.89) 31%, transparent 61%), radial-gradient(transparent 33%, #271a06 84%);
+    color: rgba(0,0,0,0.5);
+    background-image: linear-gradient(90deg, transparent 48%, currentColor, transparent 52%), linear-gradient(20deg, transparent 48%, currentColor, transparent 52%), linear-gradient(40deg, transparent 48%, currentColor, transparent 52%), linear-gradient(60deg, transparent 48%, currentColor, transparent 52%), linear-gradient(80deg, transparent 48%, currentColor, transparent 52%), linear-gradient(100deg, transparent 48%, currentColor, transparent 52%), linear-gradient(120deg, transparent 48%, currentColor, transparent 52%), linear-gradient(140deg, transparent 48%, currentColor, transparent 52%), linear-gradient(160deg, transparent 48%, currentColor, transparent 52%), linear-gradient(180deg, transparent 48%, currentColor, transparent 52%), linear-gradient(131deg, rgba(14, 7, 4, 0.84) 31%, transparent 61%), linear-gradient(131deg, rgba(14, 7, 4, 0.89) 31%, transparent 61%), radial-gradient(transparent 33%, #271a06 84%);
     background-image: linear-gradient(131deg, rgba(14, 7, 4, 0.89) 31%, transparent 61%), radial-gradient(transparent 33%, #271a06 84%), repeating-conic-gradient(transparent, rgba(53, 37, 37, 0.52) 20deg, transparent 30deg);
     box-shadow: 0 0 0.3em 0.2em #3e2909;
     border-radius: 50%;
@@ -537,7 +540,7 @@ div:after, div:before {
     bottom: 9%;
     left: 18%;
     box-shadow: -0.4em 1.7em 1.2em -0.9em #6b4936c4, -0.2em 4.5em 1.4em -0.5em #f2e0d333;
-    background-image: radial-gradient(ellipse closest-side at 60% 46%, #a9877a 10%, transparent 102%), radial-gradient(ellipse at 50% 13%, #5a462e 33%, #61312263, rgba(94, 43, 46, 0) 72%), linear-gradient(to right, #5a4035, rgba(76, 38, 40, 0));
+    background-image: radial-gradient(ellipse closest-side at 60% 46%, #a9877a 10%, #a9877a00 102%), radial-gradient(ellipse at 50% 13%, #5a462e 33%, #61312263, rgba(94, 43, 46, 0) 72%), linear-gradient(to right, #5a4035, rgba(76, 38, 40, 0));
 }
 
 .eyeleft .lash {
@@ -599,7 +602,8 @@ div:after, div:before {
     width: 73%;
     height: 72%;
     background-color: #8e6c4c;
-    background-image: linear-gradient(131deg, rgba(14, 7, 4, 0.84) 31%, transparent 61%), radial-gradient(transparent 33%, #271a06 84%);
+    color: rgba(0,0,0,0.5);
+    background-image: linear-gradient(90deg, transparent 48%, currentColor, transparent 52%), linear-gradient(20deg, transparent 48%, currentColor, transparent 52%), linear-gradient(40deg, transparent 48%, currentColor, transparent 52%), linear-gradient(60deg, transparent 48%, currentColor, transparent 52%), linear-gradient(80deg, transparent 48%, currentColor, transparent 52%), linear-gradient(100deg, transparent 48%, currentColor, transparent 52%), linear-gradient(120deg, transparent 48%, currentColor, transparent 52%), linear-gradient(140deg, transparent 48%, currentColor, transparent 52%), linear-gradient(160deg, transparent 48%, currentColor, transparent 52%), linear-gradient(180deg, transparent 48%, currentColor, transparent 52%), linear-gradient(131deg, rgba(14, 7, 4, 0.84) 31%, transparent 61%), radial-gradient(transparent 33%, #271a06 84%);
     background-image: linear-gradient(131deg, rgba(14, 7, 4, 0.84) 31%, transparent 61%), radial-gradient(transparent 33%, #271a06 84%), repeating-conic-gradient(transparent, rgba(53, 37, 37, 0.52) 20deg, transparent 30deg);
     box-shadow: 0 0 0.3em 0.2em #3e2909;
     border-radius: 50%;
@@ -685,7 +689,9 @@ div:after, div:before {
 }
 
 .hairshape.front {
-    filter: blur(0.1em);z-index: 10;transform: translateZ(100em);
+    filter: blur(0.1em);
+    z-index: 10;
+    transform: translateZ(100em);
 }
 
 .hairshape.front:after {
@@ -1043,7 +1049,8 @@ div:after, div:before {
 .neckruff.bottom {
     top: 31%;
     left: -1%;
-    transform: rotateY(3deg) rotateX(48deg) rotateZ(6deg) scaleY(1.325) scaleX(1.05) translateZ(-2.3em);z-index: -999;
+    transform: rotateY(3deg) rotateX(48deg) rotateZ(6deg) scaleY(1.325) scaleX(1.05) translateZ(-2.3em);
+    z-index: -999;
 }
 
 .lacetop {
@@ -1164,24 +1171,7 @@ div:after, div:before {
     top: 2.6em;
     left: 0;
     right: 0;
-    background-image: linear-gradient(10deg, transparent 48%, currentColor, transparent 52%),
-        linear-gradient(20deg, transparent 48%, currentColor, transparent 52%),
-        linear-gradient(30deg, transparent 48%, currentColor, transparent 52%),
-        linear-gradient(40deg, transparent 48%, currentColor, transparent 52%),
-        linear-gradient(50deg, transparent 48%, currentColor, transparent 52%),
-        linear-gradient(60deg, transparent 48%, currentColor, transparent 52%),
-        linear-gradient(70deg, transparent 48%, currentColor, transparent 52%),
-        linear-gradient(80deg, transparent 48%, currentColor, transparent 52%),
-        linear-gradient(90deg, transparent 48%, currentColor, transparent 52%),
-        linear-gradient(100deg, transparent 48%, currentColor, transparent 52%),
-        linear-gradient(110deg, transparent 48%, currentColor, transparent 52%),
-        linear-gradient(120deg, transparent 48%, currentColor, transparent 52%),
-        linear-gradient(130deg, transparent 48%, currentColor, transparent 52%),
-        linear-gradient(140deg, transparent 48%, currentColor, transparent 52%),
-        linear-gradient(150deg, transparent 48%, currentColor, transparent 52%),
-        linear-gradient(160deg, transparent 48%, currentColor, transparent 52%),
-        linear-gradient(170deg, transparent 48%, currentColor, transparent 52%),
-        linear-gradient(180deg, transparent 48%, currentColor, transparent 52%);
+    background-image: linear-gradient(10deg, transparent 48%, currentColor, transparent 52%), linear-gradient(20deg, transparent 48%, currentColor, transparent 52%), linear-gradient(30deg, transparent 48%, currentColor, transparent 52%), linear-gradient(40deg, transparent 48%, currentColor, transparent 52%), linear-gradient(50deg, transparent 48%, currentColor, transparent 52%), linear-gradient(60deg, transparent 48%, currentColor, transparent 52%), linear-gradient(70deg, transparent 48%, currentColor, transparent 52%), linear-gradient(80deg, transparent 48%, currentColor, transparent 52%), linear-gradient(90deg, transparent 48%, currentColor, transparent 52%), linear-gradient(100deg, transparent 48%, currentColor, transparent 52%), linear-gradient(110deg, transparent 48%, currentColor, transparent 52%), linear-gradient(120deg, transparent 48%, currentColor, transparent 52%), linear-gradient(130deg, transparent 48%, currentColor, transparent 52%), linear-gradient(140deg, transparent 48%, currentColor, transparent 52%), linear-gradient(150deg, transparent 48%, currentColor, transparent 52%), linear-gradient(160deg, transparent 48%, currentColor, transparent 52%), linear-gradient(170deg, transparent 48%, currentColor, transparent 52%), linear-gradient(180deg, transparent 48%, currentColor, transparent 52%);
     background-image: repeating-conic-gradient(from 0deg at 50% 80%, currentColor, currentColor 4deg, transparent 6deg, transparent 18deg);
 }
 
@@ -1427,7 +1417,8 @@ div:after, div:before {
     width: 220%;
     height: 65%;
     left: -46%;
-    top: 67%;transform: translateZ(95em);
+    top: 67%;
+    transform: translateZ(95em);
 }
 
 .bodice {
@@ -1436,7 +1427,8 @@ div:after, div:before {
     left: -21%;
     top: 70%;
     border-radius: 19% 5% 0 0 / 58% 22% 0 0;
-    overflow: hidden;transform: translateZ(93em);
+    overflow: hidden;
+    transform: translateZ(93em);
 }
 
 .bodice .sleevepuff {
@@ -1736,7 +1728,8 @@ div:after, div:before {
     transform: rotate(21deg);
     transform-origin: 100% 0;
     border: 0.0em double #ffffff7a;
-    box-shadow: inset 0.6em -0.8em 1.3em -0.6em #441f1b40, 0 0 0.2em 0.7em #c7c6c6d1;z-index: 9999999;
+    box-shadow: inset 0.6em -0.8em 1.3em -0.6em #441f1b40, 0 0 0.2em 0.7em #c7c6c6d1;
+    z-index: 9999999;
 }
 
 .collar {
