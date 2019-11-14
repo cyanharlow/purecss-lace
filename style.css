@@ -1965,6 +1965,10 @@ div:after, div:before {
 }
 
 /* Animations */
+.eyeright:hover, .eyeleft:hover {
+    cursor: pointer;
+}
+
 .eyeright:hover .eye, .eyeleft:hover .eye {
     opacity: 0;
 }
