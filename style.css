@@ -1963,3 +1963,26 @@ div:after, div:before {
     transform: rotate(21deg);
     z-index: 88888888;
 }
+
+/* Animations */
+.eyeright:hover .eye, .eyeleft:hover .eye {
+    opacity: 0;
+}
+
+.eyeright:hover .hair.right.lashes {
+    top: 55%;
+}
+
+.eyeright:hover .hair.right.bottomlashes {
+    transform: scaleX(-1) rotate(0deg);
+    top: 55%;
+}
+
+.eyeleft:hover .hair.left.lashes {
+    top: 59%;
+}
+
+.eyeleft:hover .hair.left.bottomlashes {
+    transform: scaleX(1) rotate(0deg);
+    top: 58%;
+}
