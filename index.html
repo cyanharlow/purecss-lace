@@ -1282,5 +1282,26 @@
                 </div>
             </div>
         </div>
+        <script>
+            const item = document.querySelectorAll('.bottomlips')[0]
+            const eye = document.querySelectorAll('.eyeright .eye')[0]
+            item.style.transition = 'all .6s ease'
+            eye.style.transition = 'all .6s ease'
+            let state = false
+            window.setInterval(() => {
+                state = !state
+                if (state) {
+                    eye.style.height = '0%'
+                    eye.style.bottom = '45%'
+                    eye.style.transform = 'rotate(0deg)'
+                    item.style.opacity = 0
+                } else {
+                    eye.style.height = '43%'
+                    eye.style.bottom = '23%'
+                    eye.style.transform = 'rotate(55deg)'
+                    item.style.opacity = 1
+                }
+            }, 600)
+        </script>
     </body>
 </html>
