@@ -1,3 +1,7 @@
+html, body {
+    background-color: green !important; /* !important is only for demo purposes. */
+}
+
 html {
     overflow-x: hidden;
     font-size: 10px;
